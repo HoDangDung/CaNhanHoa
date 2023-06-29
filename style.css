@@ -1,0 +1,68 @@
+:root {
+    --background-color: #BF3DC2;
+    --icon-color: white;
+}
+
+g:not(.hover) g path {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+g:not(.hover):hover g path {
+    fill: var(--background-color);
+    transition: 0.5s;
+}
+
+g:not(.hover):hover g.icon path {
+    fill: var(--icon-color);
+    transition: 0.5s;
+}
+
+g g.arrow {
+    animation: wipe 0.5s forwards;
+    /* animation: fill 0.5s forwards; */
+}
+
+@keyframes wipe {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#arrow1 {
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+#arrow2 {
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+#arrow3 {
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+#arrow4 {
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+#arrow5 {
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+#arrow6 {
+    animation-delay: 6s;
+    opacity: 0;
+}
